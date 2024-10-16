@@ -1,0 +1,107 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    position: relative; 
+    height: 100px; 
+    padding: 0 20px; 
+  }
+  
+  .title {
+    font-size: 50px;
+    color: #FFF;
+    flex-shrink: 0; /* Prevents the title from shrinking */
+  }
+  
+  .navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 40px; 
+  }
+  
+  .navbar button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s;
+    position: relative;
+  }
+  
+  .navbar button::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+  }
+  
+  .navbar button:hover::before{
+    width: 99%;
+  }
+  
+  .padam {
+    margin-top: 0px;
+    float: right;
+    width: 100%;
+    max-width: 905px;
+    height: auto;
+  }
+  
+  .rectangle {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    width: 195px;
+    height: 65px; 
+    background: white; 
+    border-radius: 10px; 
+    border: 1px solid white;
+    transition: 0.5s;
+    position: relative;
+    top: 400px;
+    left: 100px;
+  }
+  
+  .rectangle:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .sectionTwo {
+    background-color: white;
+    margin-top: 1000px;
+    overflow: hidden;
+    height: 1000px;
+    padding-top: 20px;
+  }
+  
+  .sectionTwo h2 {
+    color: black;
+    margin-left: 40px;
+  }
+  
+  footer{
+    background-color: black;
+    text-align: center;
+    height: 100px;
+    font-size: 50px;
+  }
+
+  a{
+    margin: 0 30px;
+    font-weight: 500;
+    text-decoration: inherit;
+    color: #FFF;
+  }
+
